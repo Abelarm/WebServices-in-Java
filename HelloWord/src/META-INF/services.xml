@@ -1,0 +1,9 @@
+<service name="HelloWorld">
+	<description>
+		This is my first service, which says hello 
+   </description>
+	<parameter name="ServiceClass">it.unisa.services.HelloWorld</parameter>
+	<operation name="sayHello">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+	</operation>
+</service>

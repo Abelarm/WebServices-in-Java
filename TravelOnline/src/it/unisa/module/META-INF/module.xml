@@ -1,0 +1,7 @@
+<module name="checkClient" class="it.unisa.module.checkClientModule">
+    <InFlow>
+        <handler name="InFlowcheckHandler" class="it.unisa.module.checkHandler">
+            <order phase="checkClient"/>
+        </handler>
+    </InFlow>
+</module>

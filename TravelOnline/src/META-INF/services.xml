@@ -1,0 +1,11 @@
+<service name="TravelOnline">
+	<Description>
+		Permette di trovare un pacchetto, inserire un cliente, e fare una prenotazione
+	</Description>
+	<module ref="checkClient"/>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+			class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+	</messageReceivers>
+	<parameter name="ServiceClass">it.unisa.service.TravelOnlineService</parameter>
+</service>

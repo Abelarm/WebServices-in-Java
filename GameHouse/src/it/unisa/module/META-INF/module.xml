@@ -1,0 +1,12 @@
+<module name="scontoModule" class="it.unisa.module.scontoModule">
+    <InFlow>
+        <handler name="InFlowscontoHandler" class="it.unisa.module.scontoHandler">
+            <order phase="phaseSconto"/>
+        </handler>
+    </InFlow>
+    <OutFlow>
+        <handler name="OutFlowLogHandler" class="it.unisa.module.LogHandler">
+            <order phase="phaseSconto"/>
+        </handler>
+    </OutFlow>
+</module>
